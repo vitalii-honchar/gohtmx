@@ -1,0 +1,13 @@
+{{template "base" .}}
+
+{{define "title"}}User - {{.User.Name}}{{end}}
+
+{{define "content"}}
+<div class="max-w-2xl mx-auto p-4">
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="px-6 py-4">
+            {{template "user_profile_view" .User}}
+        </div>
+    </div>
+</div>
+{{end}}

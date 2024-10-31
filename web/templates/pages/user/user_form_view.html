@@ -1,0 +1,26 @@
+{{define "provile_view"}}
+
+<div id="view-mode" class="space-y-4">
+    <div>
+        <span class="block text-sm font-medium text-gray-700">Name</span>
+        <span class="mt-1 block text-gray-900">{{.User.Name}}</span>
+    </div>
+
+    <div>
+        <span class="block text-sm font-medium text-gray-700">Email</span>
+        <span class="mt-1 block text-gray-900">{{.User.Email}}</span>
+    </div>
+
+    <div>
+        <span class="block text-sm font-medium text-gray-700">Role</span>
+        <span class="mt-1 block text-gray-900">{{.User.Role}}</span>
+    </div>
+
+    <div class="mt-6 flex justify-end">
+        <button hx-trigger="click" hx-target="#view-mode"
+            class="rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500">
+            Edit
+        </button>
+    </div>
+</div>
+{{end}}
